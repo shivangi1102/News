@@ -1,0 +1,5 @@
+const response = await axios
+          .get('https://newsapi.org/v2/top-headlines?country=in&apiKey=79f1ebf121b14cca9767657adca2b65f&pageSize=10')
+          .catch((err) => {
+            console.log("Err: ", err);
+          });
