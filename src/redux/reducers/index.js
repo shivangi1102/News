@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 
-import { productreducer, searchnewsreducer } from "./productreducer";
+import { newsreducer, searchnewsreducer } from "./productreducer";
 
 const reducer=combineReducers({
-    allproduct:productreducer,
-    product:searchnewsreducer,
+    allnews:productreducer,
+    news:searchnewsreducer,
     
 })
 
