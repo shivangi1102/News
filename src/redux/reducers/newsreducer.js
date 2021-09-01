@@ -9,7 +9,7 @@ const initialState={
     products:[]
 }
 
-export const productreducer=(state=initialState,{type,payload})=>{
+export const newsreducer=(state=initialState,{type,payload})=>{
     if (type===ActionTypes.SET_NEWS){
         return {...state,news:payload}
     }
