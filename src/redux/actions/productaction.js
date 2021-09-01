@@ -1,16 +1,15 @@
 
 
 const ActionTypes={
-    SET_PRODUCTS :"SET_PRODUCTS",
+    SET_NEWS :"SET_NEWS",
 SEARCH_NEWS :"SEARCH_NEWS",
-    REMOVE_PRODUCTS :"REMOVE_PRODUCTS",
-   
+    
 }
 
-export const setProducts=(products)=>{
+export const setNews=(news)=>{
     return {
-        type:ActionTypes.SET_PRODUCTS,
-        payload: products
+        type:ActionTypes.SET_News,
+        payload: news
     }
 }
 
