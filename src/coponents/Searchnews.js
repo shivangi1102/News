@@ -6,17 +6,10 @@ import { useDispatch } from 'react-redux'
 import { searchNews } from '../redux/actions/productaction'
 import News from './News'
 
-
-
 const Searchnews = () => {
     const {search}=useParams()
     const dispatch=useDispatch()
-    
-
-    
     var url=`https://newsapi.org/v2/everything?apiKey=79f1ebf121b14cca9767657adca2b65f&q=${search}`
-    
-   
    console.log(search)
     const fetchSearch= useCallback(async ()=>{
         
@@ -27,9 +20,7 @@ const Searchnews = () => {
         
         dispatch(searchNews(data));
         
-        
         }
-        
         catch(error){
             console.log(error)
         }
