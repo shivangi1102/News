@@ -5,14 +5,14 @@ import { Card,Button ,Col,Row} from 'react-bootstrap'
 
 const Product = () => {
 
-    const products = useSelector((state)=>state.allproduct.products.articles)
-    console.log(products)
-    if(!products){
+    const news = useSelector((state)=>state.allnews.products.articles)
+    console.log(news)
+    if(!news){
         return null
     }
-    const list=products.map((product)=>{
+    const list=news.map((newss)=>{
        
-        const {author,title,urlToImage,description}=product
+        const {author,title,urlToImage,description}=newss
         return(
             <>
             <Card style={{ width:'900px', backgroundColor:'#f0f8ff',marginTop:'30px',marginLeft:'200px'}} className="cocktail">
@@ -27,14 +27,11 @@ const Product = () => {
     <h6>AUTHOR: {author}</h6>
   </Card.Body>
   </Col>
-                </Row>
-  
+  </Row>
 </Card>
-            </>
+   </>
         )
     })
-
-   
     return(
         <>
         <h1 style={{textAlign:'center',marginTop:'20px'}}>Top News</h1>
