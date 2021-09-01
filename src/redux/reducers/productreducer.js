@@ -1,7 +1,7 @@
 const ActionTypes={
-    SET_PRODUCTS :"SET_PRODUCTS",
+    SET_NEWS :"SET_NEWS",
 SEARCH_NEWS :"SEARCH_NEWS",
-    REMOVE_PRODUCTS :"REMOVE_PRODUCTS",
+    
    
 }
 
@@ -10,14 +10,10 @@ const initialState={
 }
 
 export const productreducer=(state=initialState,{type,payload})=>{
-    if (type===ActionTypes.SET_PRODUCTS){
-        return {...state,products:payload}
+    if (type===ActionTypes.SET_NEWS){
+        return {...state,news:payload}
     }
-
-    
     return state
-
-
 }
 
 export const searchnewsreducer=(state={
