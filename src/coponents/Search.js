@@ -4,18 +4,9 @@ import { Form,FormControl,Button } from 'react-bootstrap'
 
 import { useState,useEffect,useCallback } from 'react';
 
-
-
-
-
-
-
 function Search() {
 
     const [search,setsearchnews]=useState('')
-    
-
-
   
   function handleSubmit(e) {
     e.preventDefault()
@@ -24,8 +15,6 @@ function Search() {
   function resetsearch() {
     setsearchnews("")
   }
-
-    
     return (
         <>
         
